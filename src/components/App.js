@@ -1,6 +1,6 @@
 import React, { Component, useState } from "react";
 import "../styles/App.css";
-
+let Global_count = 0;
 function App() {
   let relativeList = [
     "relativeListItem1",
@@ -8,10 +8,11 @@ function App() {
     "relativeListItem3",
     "relativeListItem4",
   ];
+
   let i = 0;
   return (
     <div id="main">
-      <ol key={relativeList[i++]}>
+      <ol key={Global_count++}>
         <li key={relativeList[0]}>Bhubesh</li>
         <li key={relativeList[1]}>Nariender</li>
         <li key={relativeList[2]}>Rohit</li>
