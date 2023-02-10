@@ -8,9 +8,10 @@ function App() {
     "relativeListItem3",
     "relativeListItem4",
   ];
+  let i = 0;
   return (
     <div id="main">
-      <ol>
+      <ol key={relativeList[i++]}>
         <li key={relativeList[0]}>Bhubesh</li>
         <li key={relativeList[1]}>Nariender</li>
         <li key={relativeList[2]}>Rohit</li>
